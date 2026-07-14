@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>改善客</title><link>https://gaishanke.com</link><description>@gaishanke</description><copyright>改善客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gaishanke.com</link></image><lastBuildDate>Sun, 12 Jul 2026 13:13:43 +0000</lastBuildDate><managingEditor>改善客</managingEditor><ttl>60</ttl><webMaster>改善客</webMaster><item><title>Gmeek Deploy</title><link>https://gaishanke.com/post/3.html</link><description># Gmeek 部署
+
+## 内容来源
+- [Gmeek快速上手](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)
+- [Gmeek 部署](https://github.com/gaishanke/gaishanke.github.io/issues/3)
+
+## Gmeek 博客框架
+- 超轻量级个人博客模板
+- 完全基于 `Github Pages` 、 `Github Issues` 和 `Github Actions`，
+- 不需要本地部署
+
+## 一、资源
+
+## Gmeek
+- [Gmeek快速上手](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)  
+- [Gmeek Github 源码](https://github.com/Meekdai/Gmeek)
+
+### Markdown 语法
+- [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)  
+- [基本撰写和格式语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+### 在线编辑工具
+- [markdown.com.cn](https://markdown.com.cn/editor/)
+
+## 二、安装
+
+### 创建仓库
+- 点击[通过模板创建仓库](https://github.com/new?template_name=Gmeek-template&amp;template_owner=Meekdai)，仓库名称：`&lt;用户名&gt;.github.io`
+
+### 启用 Pages
+- 仓库页面导航：`Settings` -&gt; `Pages` -&gt; `Build and deployment`
+- `Source` 下拉选择 `Github Actions`
+
+&lt;img src='https://cdn.jsdelivr.net/gh/shenjuexiao/shenjuexiao@main/Github_png/Gmeek_Settings_Github-Pages_Github-Actions.png' /&gt;
+
+### 开始写作
+- 仓库页面导航：`Issues` -&gt; `New issue`
+- `Add a title`（写标题），`Add a description`（写描述）。</description><guid isPermaLink="true">https://gaishanke.com/post/3.html</guid><pubDate>Wed, 08 Jul 2026 08:07:54 +0000</pubDate></item><item><title>Github Issues Blog List</title><link>https://gaishanke.com/post/2.html</link><description># Github Issues 博客项目（不完全统计）
+
+## 内容来源
+
+- [Github Issues 搭建的博客项目列表](https://github.com/gaishanke/gaishanke.github.io/issues/2)
+
+## @rena.to/github-blog
+
+-   **技术栈**：TypeScript（核心API库）
+-   **项目链接**：[https://www.npmjs.com/package/@rena.to/github-blog](https://www.npmjs.com/package/@rena.to/github-blog)
+
+## AllanChain/blog
+
+-   **技术栈**：Astro
+-   **项目链接**：[https://github.com/AllanChain/blog](https://github.com/AllanChain/blog)
+
+## babilema
+
+-   **技术栈**：Go（静态博客生成器）
+-   **项目链接**：[https://pkg.go.dev/github.com/ByteBakersCo/babilema](https://pkg.go.dev/github.com/ByteBakersCo/babilema)
+
+## ginb
+
+-   **技术栈**：Next.js, Tailwind CSS, React
+-   **项目链接**：[https://github.com/ChrAlpha/ginb](https://github.com/ChrAlpha/ginb)
+
+## gitblog
+
+-   **技术栈**：Python
+-   **项目链接**：[https://github.com/yihong0618/gitblog](https://github.com/yihong0618/gitblog)
+
+## gitblog
+
+-   **技术栈**：JavaScript
+-   **项目链接**：[https://github.com/imuncle/gitblog](https://github.com/imuncle/gitblog)
+
+## Gmeek
+
+-   **技术栈**：GitHub Pages, GitHub Actions, jinja2, primer.style
+-   **项目链接**：[https://github.com/Ambop/Gmeek](https://github.com/Ambop/Gmeek)
+
+## Issue-Blog-With-Github-Action
+
+-   **技术栈**：Vuepress
+-   **项目链接**：[https://github.com/Yidadaa/Issue-Blog-With-Github-Action](https://github.com/Yidadaa/Issue-Blog-With-Github-Action)
+
+## qiwihui/blog
+
+-   **技术栈**：CSS
+-   **项目链接**：[https://github.com/qiwihui/blog](https://github.com/qiwihui/blog)
+
+## Sep0lkit/git-issues-blog
+
+-   **技术栈**：Python
+-   **项目链接**：[https://github.com/Sep0lkit/git-issues-blog](https://github.com/Sep0lkit/git-issues-blog)
+
+## ttop5/issue-blog
+
+-   **技术栈**：Vue
+-   **项目链接**：[https://github.com/ttop5/issue-blog](https://github.com/ttop5/issue-blog)
+
+## whyour/issue-blog
+
+-   **技术栈**：TypeScript（VS Code插件）
+-   **项目链接**：[https://github.com/whyour/issue-blog](https://github.com/whyour/issue-blog)
+
+## xizhibei/blog
+
+-   **技术栈**：Node.js, Golang
+-   **项目链接**：[https://github.com/xizhibei/blog](https://github.com/xizhibei/blog)。</description><guid isPermaLink="true">https://gaishanke.com/post/2.html</guid><pubDate>Tue, 07 Jul 2026 18:28:25 +0000</pubDate></item><item><title>Github Issues Blog Gitblog</title><link>https://gaishanke.com/post/1.html</link><description># Gitblog
+
+用过 Jekyll、Hexo，捣鼓了一阵子，都没能长期使用持续写作，现在转头使用 GIthub Issue 搭建的博客系统。</description><guid isPermaLink="true">https://gaishanke.com/post/1.html</guid><pubDate>Mon, 06 Jul 2026 18:28:04 +0000</pubDate></item></channel></rss>
