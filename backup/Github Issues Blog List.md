@@ -2,7 +2,7 @@
 
 ## 内容来源
 
-- [Github Issues 搭建的博客项目列表](https://github.com/gaishanke/gaishanke.github.io/issues/2)
+- [Github Issues 搭建的博客项目列表](https://github.com/gaishanke/gaiashanke.github.io/issues/2)
 
 ## @rena.to/github-blog
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>改善客</title><link>https://gaishanke.com</link><description>@gaishanke</description><copyright>改善客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gaishanke.com</link></image><lastBuildDate>Sun, 12 Jul 2026 13:13:43 +0000</lastBuildDate><managingEditor>改善客</managingEditor><ttl>60</ttl><webMaster>改善客</webMaster><item><title>Gmeek Deploy</title><link>https://gaishanke.com/post/3.html</link><description># Gmeek 部署
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Tue, 14 Jul 2026 11:52:53 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Gmeek Deploy</title><link>https://shenjuexiao.com/post/3.html</link><description># Gmeek 部署
 
 ## 内容来源
 - [Gmeek快速上手](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)
@@ -36,11 +36,11 @@
 
 ### 开始写作
 - 仓库页面导航：`Issues` -&gt; `New issue`
-- `Add a title`（写标题），`Add a description`（写描述）。</description><guid isPermaLink="true">https://gaishanke.com/post/3.html</guid><pubDate>Wed, 08 Jul 2026 08:07:54 +0000</pubDate></item><item><title>Github Issues Blog List</title><link>https://gaishanke.com/post/2.html</link><description># Github Issues 博客项目（不完全统计）
+- `Add a title`（写标题），`Add a description`（写描述）。</description><guid isPermaLink="true">https://shenjuexiao.com/post/3.html</guid><pubDate>Tue, 14 Jul 2026 11:44:53 +0000</pubDate></item><item><title>Github Issues Blog List</title><link>https://shenjuexiao.com/post/2.html</link><description># Github Issues 博客项目（不完全统计）
 
 ## 内容来源
 
-- [Github Issues 搭建的博客项目列表](https://github.com/gaishanke/gaishanke.github.io/issues/2)
+- [Github Issues 搭建的博客项目列表](https://github.com/gaishanke/gaiashanke.github.io/issues/2)
 
 ## @rena.to/github-blog
 
@@ -105,6 +105,6 @@
 ## xizhibei/blog
 
 -   **技术栈**：Node.js, Golang
--   **项目链接**：[https://github.com/xizhibei/blog](https://github.com/xizhibei/blog)。</description><guid isPermaLink="true">https://gaishanke.com/post/2.html</guid><pubDate>Tue, 07 Jul 2026 18:28:25 +0000</pubDate></item><item><title>Github Issues Blog Gitblog</title><link>https://gaishanke.com/post/1.html</link><description># Gitblog
+-   **项目链接**：[https://github.com/xizhibei/blog](https://github.com/xizhibei/blog)。</description><guid isPermaLink="true">https://shenjuexiao.com/post/2.html</guid><pubDate>Tue, 14 Jul 2026 11:44:22 +0000</pubDate></item><item><title>Github Issues Blog Gitblog</title><link>https://shenjuexiao.com/post/1.html</link><description># Gitblog
 
-用过 Jekyll、Hexo，捣鼓了一阵子，都没能长期使用持续写作，现在转头使用 GIthub Issue 搭建的博客系统。</description><guid isPermaLink="true">https://gaishanke.com/post/1.html</guid><pubDate>Mon, 06 Jul 2026 18:28:04 +0000</pubDate></item></channel></rss>
+用过 Jekyll、Hexo，捣鼓了一阵子，都没能长期使用持续写作，现在转头使用 GIthub Issue 搭建的博客系统。</description><guid isPermaLink="true">https://shenjuexiao.com/post/1.html</guid><pubDate>Tue, 14 Jul 2026 11:43:56 +0000</pubDate></item></channel></rss>
