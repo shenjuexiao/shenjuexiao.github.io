@@ -1,5 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Tue, 14 Jul 2026 15:15:36 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>The requested URL returned error: 403</title><link>https://shenjuexiao.com/post/5.html</link><description># The requested URL returned error: 403
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Sat, 18 Jul 2026 05:03:10 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Astro Template</title><link>https://shenjuexiao.com/post/6.html</link><description># Astro 模板
+## Astro Paper
+![satnaing/astro-paper](https://cdn.jsdelivr.net/gh/shenjuexiao/shenjuexiao@main/Github_png/Astro_Template_satnaing_astro-paper.png)
+高评分、暗黑模式、RSS/SEO 完善 
+Demo: [astro-paper.pages.dev](https://astro-paper.pages.dev/)  
+Github: [satnaing/astro-paper](https://github.com/satnaing/astro-paper)
+
+## Astrofy
+![manuelernestog/astrofy](https://cdn.jsdelivr.net/gh/shenjuexiao/shenjuexiao@main/Github_png/Astro_Template_manuelernestog_astrofy.png)
+含简历/商店/博客多合一，CV+ 项目画廊  
+Demo: [astrofy-template.netlify.app](https://astrofy-template.netlify.app/)  
+Github: [manuelernestog/astrofy](https://github.com/manuelernestog/astrofy)
+
+## EV0
+![gndx/ev0-astro-theme](https://cdn.jsdelivr.net/gh/shenjuexiao/shenjuexiao@main/Github_png/Astro_Template_gndx_ev0-astro-theme.png)
+极简响应式
+Demo: [ev0.gndx.dev](https://ev0.gndx.dev/)  
+Github: [withastro/starlight](https://github.com/gndx/ev0-astro-theme)
+
+## Firefly
+![CuteLeaf/Firefly](https://cdn.jsdelivr.net/gh/shenjuexiao/shenjuexiao@main/Github_png/Astro_Template_CuteLeaf_Firefly.png)
+专为技术文档设计，支持多语言、搜索、版本切换
+Demo: [firefly.cuteleaf.cn](https://firefly.cuteleaf.cn/)  
+Github: [CuteLeaf/Firefly](https://github.com/CuteLeaf/Firefly)  
+Docs: [docs-firefly.cuteleaf.cn](https://docs-firefly.cuteleaf.cn/zh/)
+
+## Pure
+![cworld1/astro-theme-pure](https://cdn.jsdelivr.net/gh/shenjuexiao/shenjuexiao@main/Github_png/Astro_Template_cworld1_astro-theme-pure.png)
+极简 + 全文搜索  
+Demo: [astro-pure.js.org](https://astro-pure.js.org/)  
+Github: [cworld1/astro-theme-pure](https://github.com/cworld1/astro-theme-pure)
+&gt; 这位作者的 Github 主页，可以追溯到 1990 年，不知道怎么弄出来的。</description><guid isPermaLink="true">https://shenjuexiao.com/post/6.html</guid><pubDate>Sat, 18 Jul 2026 05:02:40 +0000</pubDate></item><item><title>The requested URL returned error: 403</title><link>https://shenjuexiao.com/post/5.html</link><description># The requested URL returned error: 403
 
 # GitHub Actions push 403 权限拒绝解决
 
