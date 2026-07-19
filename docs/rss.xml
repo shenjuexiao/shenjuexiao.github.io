@@ -1,5 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Sat, 18 Jul 2026 08:42:00 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>actions-gh-pages</title><link>https://shenjuexiao.com/post/7.html</link><description># actions-gh-pages
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Sun, 19 Jul 2026 03:38:30 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Resolving "npm package not found" Errors</title><link>https://shenjuexiao.com/post/8.html</link><description># Resolving 'npm package not found' Errors
+
+This error occurs when npm cannot locate a required package in your project, often due to missing installations, incorrect paths, or misconfigured project settings.
+
+##Example
+
+```bash
+$ npm run build
+Error: NPM packages not found. Please confirm npm packages which need to build are in the correct directory
+```
+
+A common cause is that dependencies listed in package.json have not been installed. Running npm install in the project root usually resolves this by downloading all required packages into the node_modules directory.
+
+If you are working with environments like WeChat Mini Programs, the issue can also arise if npm packages are outside the miniprogramRoot directory. In such cases, you may need to adjust project.config.json:
+
+```json
+'packNpmManually': true,
+'packNpmRelationList': [
+{
+'packageJsonPath': './package.json',
+'miniprogramNpmDistDir': './miniprogram/'
+}
+]
+```
+
+After updating, restart the development tool and rebuild npm.
+
+Sometimes, the error appears because npm itself is not installed or not accessible. Verify installation with:
+
+```bash
+npm -v
+```
+
+If it fails, reinstall Node.js (which includes npm) and ensure its binary path is added to your system’s PATH environment variable.
+
+For corrupted or incomplete installs, delete node_modules and package-lock.json, then reinstall:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+In summary, ensure dependencies are installed, paths are correctly configured, and npm is properly set up in your environment. Restarting your IDE or build tool after changes often helps apply configurations.
+
+## 了解详细信息
+- [blog.csdn.net](https://blog.csdn.net/qq_43492356/article/details/130863125)
+-  [developers.weixin.qq.com](https://developers.weixin.qq.com/community/minihome/doc/0002c4582ac3303e4413d1da561c00)
+- [geeksforgeeks.org](https://www.geeksforgeeks.org/node-js/how-to-resolve-npm-command-not-found-error-in-node-js/)。</description><guid isPermaLink="true">https://shenjuexiao.com/post/8.html</guid><pubDate>Sun, 19 Jul 2026 03:37:58 +0000</pubDate></item><item><title>actions-gh-pages</title><link>https://shenjuexiao.com/post/7.html</link><description># actions-gh-pages
 
 ## 内容来源
 
