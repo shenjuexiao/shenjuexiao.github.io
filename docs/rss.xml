@@ -1,5 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Wed, 22 Jul 2026 13:21:52 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>git push GitHub + Gitee</title><link>https://shenjuexiao.com/post/10.html</link><description># 同步推送 GitHub 和 Gitee
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Wed, 22 Jul 2026 15:38:41 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Gitee remote error hook declined</title><link>https://shenjuexiao.com/post/11.html</link><description># Gitee remote error hook declined
+
+## 问题
+
+-同时推送到 GitHub 和 Gitee 两个仓库：
+
+### 基本设置
+
+```bash
+git remote set-url origin git@github.com:shenjuexiao/shenjuexiao.git
+git remote set-url --add origin git@gitee.com:shenjuexiao/shenjuexiao.git
+```
+
+### 查看配置
+```bash
+git remote -v
+origin  git@github.com:shenjuexiao/shenjuexiao.git (fetch)
+origin  git@github.com:shenjuexiao/shenjuexiao.git (push)
+origin  git@gitee.com:shenjuexiao/shenjuexiao.git (push)
+```
+
+### 推送文件
+```bash
+git add .
+git commit -m '20260722'
+git push origin main
+origin  git@github.com:shenjuexiao/shenjuexiao.git (fetch)
+origin  git@github.com:shenjuexiao/shenjuexiao.git (push)
+origin  git@gitee.com:shenjuexiao/shenjuexiao.git (push)
+```
+
+### 返回结果
+```bash
+Everything up-to-date
+Enumerating objects: 68, done.
+Counting objects: 100% (68/68), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (67/67), done.
+Writing objects: 100% (68/68), 5.68 MiB | 5.83 MiB/s, done.
+Total 68 (delta 21), reused 0 (delta 0)
+remote: Powered by GITEE.COM [1.1.23]
+remote: Set trace flag b6498f96
+remote: Push will publish a hidden email, make email public or abandon related commits
+remote: error: hook declined to update refs/heads/main
+To gitee.com:shenjuexiao/shenjuexiao.git
+ ! [remote rejected] main -&gt; main (hook declined)
+error: failed to push some refs to 'git@gitee.com:shenjuexiao/shenjuexiao.git'
+```
+
+这个错误是 Gitee 服务端的 **pre-receive hook（预接收钩子）** 拒绝了你的推送。</description><guid isPermaLink="true">https://shenjuexiao.com/post/11.html</guid><pubDate>Wed, 22 Jul 2026 15:38:09 +0000</pubDate></item><item><title>git push GitHub + Gitee</title><link>https://shenjuexiao.com/post/10.html</link><description># 同步推送 GitHub 和 Gitee
 
 ## 内容来源
 
