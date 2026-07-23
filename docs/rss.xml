@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Thu, 23 Jul 2026 17:20:41 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Bing Wallpaper API</title><link>https://shenjuexiao.com/post/13.html</link><description># 必应壁纸每日一图 API
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Thu, 23 Jul 2026 17:34:00 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>GitHub raw vs cdn</title><link>https://shenjuexiao.com/post/14.html</link><description># GitHub 图片加速对比
+
+## 内容来源
+
+-   [GitHub 图片加速对比](https://chat.deepseek.com/share/d6zojxbtsmt6vo9uyi)[（Deepseek）](https://chat.deepseek.com/a/chat/s/c18ff170-9222-4548-a7a4-5b8be0cae5e4)
+
+## 🔍比较图片引用 
+`raw.githubusercontent.com` 和 `cdn.jsdelivr.net/gh`
+
+简单来说，`raw.githubusercontent.com` 是图片在 GitHub 上的**源服务器地址**，而 `cdn.jsdelivr.net/gh` 则是一个**免费的 CDN 加速服务**，它的核心作用就是为前者'提速'。</description><guid isPermaLink="true">https://shenjuexiao.com/post/14.html</guid><pubDate>Thu, 23 Jul 2026 17:33:30 +0000</pubDate></item><item><title>Bing Wallpaper API</title><link>https://shenjuexiao.com/post/13.html</link><description># 必应壁纸每日一图 API
 
 ## 内容来源
 
