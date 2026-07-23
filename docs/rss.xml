@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Wed, 22 Jul 2026 15:38:41 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Gitee remote error hook declined</title><link>https://shenjuexiao.com/post/11.html</link><description># Gitee remote error hook declined
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Thu, 23 Jul 2026 02:25:21 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Will not delete all non-push URLs</title><link>https://shenjuexiao.com/post/12.html</link><description># Git 远程 URL 修改
+
+## 问题
+
+```bash
+PS D:\Git\shenjuexiao&gt; git remote set-url --delete gitee git@gitee.com:shenjuexiao/shenjuexiao.git
+fatal: Will not delete all non-push URLs
+```
+
+这个错误是因为你试图删除远程仓库 `gitee` 的**唯一** URL，Git 不允许这样做——每个远程仓库至少需要保留一个 URL。</description><guid isPermaLink="true">https://shenjuexiao.com/post/12.html</guid><pubDate>Thu, 23 Jul 2026 02:24:47 +0000</pubDate></item><item><title>Gitee remote error hook declined</title><link>https://shenjuexiao.com/post/11.html</link><description># Gitee remote error hook declined
 
 ## 问题
 
