@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Thu, 23 Jul 2026 02:25:21 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Will not delete all non-push URLs</title><link>https://shenjuexiao.com/post/12.html</link><description># Git 远程 URL 修改
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Thu, 23 Jul 2026 17:20:41 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Bing Wallpaper API</title><link>https://shenjuexiao.com/post/13.html</link><description># 必应壁纸每日一图 API
+
+## 内容来源
+
+-   [Bing 每日一图壁纸 API](https://chat.deepseek.com/share/uumxj61bo84xh484tc)[（Deepseek）](https://chat.deepseek.com/a/chat/s/b7fb2e58-5ba6-40a2-ab53-2d72ea012045)
+
+获取必应每日一图，主要有**官方接口**和**第三方封装接口**两种方式，按需选择即可。</description><guid isPermaLink="true">https://shenjuexiao.com/post/13.html</guid><pubDate>Thu, 23 Jul 2026 17:20:10 +0000</pubDate></item><item><title>Will not delete all non-push URLs</title><link>https://shenjuexiao.com/post/12.html</link><description># Git 远程 URL 修改
 
 ## 问题
 
