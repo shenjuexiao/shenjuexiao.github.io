@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Thu, 23 Jul 2026 17:34:00 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>GitHub raw vs cdn</title><link>https://shenjuexiao.com/post/14.html</link><description># GitHub 图片加速对比
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Fri, 24 Jul 2026 00:30:40 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>npm vs npx</title><link>https://shenjuexiao.com/post/15.html</link><description># npm 与 npx 区别
+
+## 内容来源
+
+-   [npm 与 npx 区别](https://chat.deepseek.com/share/nib71ed8ghaqfuyb1y)[（Deepseek）](https://chat.deepseek.com/a/chat/s/1ea1f80c-e11d-4e1f-845f-8023549a044c)
+- [npx](https://docs.npmjs.com/cli/v11/commands/npx)
+
+## 简单说明
+
+`npm` 和 `npx` 是 **Node.js** 生态里两个核心但职责不同的工具，可以用一句话来区分它们：
+
+&gt; **npm 是“包管理器”，负责安装、管理依赖；而 npx 是“包执行器”，负责运行命令，无需显式安装**。</description><guid isPermaLink="true">https://shenjuexiao.com/post/15.html</guid><pubDate>Fri, 24 Jul 2026 00:30:09 +0000</pubDate></item><item><title>GitHub raw vs cdn</title><link>https://shenjuexiao.com/post/14.html</link><description># GitHub 图片加速对比
 
 ## 内容来源
 
