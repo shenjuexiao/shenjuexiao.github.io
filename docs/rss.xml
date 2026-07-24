@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Fri, 24 Jul 2026 00:30:40 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>npm vs npx</title><link>https://shenjuexiao.com/post/15.html</link><description># npm 与 npx 区别
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>神觉晓</title><link>https://shenjuexiao.com</link><description>@shenjuexiao</description><copyright>神觉晓</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shenjuexiao.com</link></image><lastBuildDate>Fri, 24 Jul 2026 02:40:56 +0000</lastBuildDate><managingEditor>神觉晓</managingEditor><ttl>60</ttl><webMaster>神觉晓</webMaster><item><title>Astro GitHub Actions</title><link>https://shenjuexiao.com/post/16.html</link><description># Astro 安装及 GitHub Actions 自动部署
+
+## 内容来源
+
+-   [安装 Astro](https://docs.astro.build/zh-cn/install-and-setup/)
+- [npx](https://docs.npmjs.com/cli/v11/commands/npx)
+
+## 通过 CLI 向导安装
+
+[docs.astro.build/zh-cn/install-and-setup/](https://docs.astro.build/zh-cn/install-and-setup/)
+
+我选择的是 `Astro Use blog template`，也可以选择其他的选项，使用模板能快速建立页面。</description><guid isPermaLink="true">https://shenjuexiao.com/post/16.html</guid><pubDate>Fri, 24 Jul 2026 02:40:32 +0000</pubDate></item><item><title>npm vs npx</title><link>https://shenjuexiao.com/post/15.html</link><description># npm 与 npx 区别
 
 ## 内容来源
 
