@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@shenjuexiao</title>
+    <style>
+        /* 全局重置 & 字体 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f6f8fa;
+            color: #24292f;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            line-height: 1.5;
+        }
+
+        /* 卡片容器 */
+        .card {
+            max-width: 720px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+            padding: 3rem 2.5rem;
+            transition: transform 0.2s ease;
+            text-align: center;
+        }
+
+        /* 头像 / 图标 */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #e1e4e8, #d0d5dc);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .avatar svg {
+            width: 64px;
+            height: 64px;
+            fill: #57606a;
+        }
+
+        /* 主标题 */
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+            color: #0d1117;
+        }
+
+        .username {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #57606a;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+            background: #f0f2f5;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+        }
+
+        /* 分隔装饰 */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #6e40c9, #3b8cff);
+            margin: 1.2rem auto 1.8rem;
+            border-radius: 10px;
+        }
+
+        /* 描述文案 */
+        .bio {
+            font-size: 1.1rem;
+            color: #24292f;
+            max-width: 480px;
+            margin: 0 auto 2rem;
+            opacity: 0.85;
+        }
+
+        /* 链接按钮组 */
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem 1.2rem;
+            margin: 2rem 0 1.6rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.65rem 1.6rem;
+            border-radius: 40px;
+            background: #f0f2f5;
+            color: #24292f;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+            border: 1px solid transparent;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .btn:hover {
+            background: #e1e4e8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+        }
+
+        .btn-primary {
+            background: #0d1117;
+            color: #ffffff;
+            border-color: #0d1117;
+        }
+
+        .btn-primary:hover {
+            background: #24292f;
+            border-color: #24292f;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #d0d7de;
+        }
+
+        .btn-outline:hover {
+            background: #f6f8fa;
+            border-color: #8b949e;
+        }
+
+        /* 底部 footer */
+        .footer {
+            margin-top: 2.8rem;
+            font-size: 0.9rem;
+            color: #57606a;
+            border-top: 1px solid #eaeef2;
+            padding-top: 1.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            flex-wrap: wrap;
+        }
+
+        .footer a {
+            color: #0969da;
+            text-decoration: none;
+            font-weight: 450;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer span {
+            opacity: 0.5;
+        }
+
+        /* 响应式微调 */
+        @media (max-width: 480px) {
+            .card {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .avatar {
+                width: 96px;
+                height: 96px;
+            }
+
+            .avatar svg {
+                width: 48px;
+                height: 48px;
+            }
+
+            .links {
+                gap: 0.6rem;
+            }
+
+            .btn {
+                padding: 0.5rem 1.2rem;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 头像占位：GitHub 风格的猫咪图标 (Octicon) -->
+        <div class="avatar">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+        </div>
+
+        <!-- 用户名 & 标题 -->
+        <h1>你好，世界 👋</h1>
+        <div class="username">@shenjuexiao 🚀 GitHub Pages</div>
+
+        <div class="divider"></div>
+
+        <p class="bio">
+            欢迎来到我的个人小站。<br>
+            这里将存放我的项目、想法或任何有趣的东西。
+        </p>
+
+        <!-- 主要链接区 -->
+        <div class="links">
+            <a href="https://github.com/shenjuexiao" class="btn btn-primary" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" style="margin-right: 2px;">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                GitHub
+            </a>
+			<!--
+            <a href="#" class="btn btn-outline" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" style="margin-right: 2px;">
+                    <path d="M1.5 1.5h13v1.5h-13V1.5zM1.5 7h13v1.5h-13V7zm0 5.5h13V14h-13v-1.5z"/>
+                </svg>
+                博客 / 笔记
+            </a>
+			-->
+            <a href="https://shenjuexiao.cn" class="btn btn-outline" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" style="margin-right: 2px;">
+                    <path d="M1.5 1.5h13v1.5h-13V1.5zM1.5 7h13v1.5h-13V7zm0 5.5h13V14h-13v-1.5z"/>
+                </svg>
+                笔记
+            </a>
+            <a href="https://v.douyin.com/CGsXnRYUYg0/" class="btn btn-outline" target="_blank">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				  <!-- 抖音图标 - 纯黑线框风格 -->
+				  <path d="M17 4.5V7.5M17 4.5C16.2 4.8 15.5 5.3 14.9 6C14.3 6.7 14 7.5 14 8.4V15.6C14 16.6 13.6 17.5 12.9 18.2C12.2 18.9 11.3 19.3 10.3 19.3C9.3 19.3 8.4 18.9 7.7 18.2C7 17.5 6.6 16.6 6.6 15.6C6.6 14.6 7 13.7 7.7 13C8.4 12.3 9.3 11.9 10.3 11.9C10.6 11.9 10.9 11.9 11.2 12.1" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+				  <path d="M11.2 12.1V14.1C11 14 10.7 13.9 10.4 13.9C9.8 13.9 9.3 14.1 8.9 14.5C8.5 14.9 8.3 15.4 8.3 16C8.3 16.6 8.5 17.1 8.9 17.5C9.3 17.9 9.8 18.1 10.4 18.1C11 18.1 11.5 17.9 11.9 17.5C12.3 17.1 12.5 16.6 12.5 16V4.5H17" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+                抖音
+            </a>
+            <!--
+            <a href="#" class="btn btn-outline" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" style="margin-right: 2px;">
+                    <path d="M8 1.5c-3.58 0-6.5 2.92-6.5 6.5 0 2.87 1.86 5.31 4.44 6.17.32.06.44-.14.44-.31v-1.14c-1.8.39-2.18-.86-2.18-.86-.29-.74-.71-.94-.71-.94-.58-.39.04-.38.04-.38.64.05.98.66.98.66.57.97 1.49.69 1.85.53.06-.41.22-.69.4-.85-1.41-.16-2.89-.7-2.89-3.12 0-.69.25-1.25.65-1.69-.07-.16-.28-.8.06-1.67 0 0 .53-.17 1.74.65.5-.14 1.04-.21 1.58-.21.54 0 1.08.07 1.58.21 1.21-.82 1.74-.65 1.74-.65.34.87.13 1.51.06 1.67.4.44.65 1 .65 1.69 0 2.42-1.48 2.96-2.89 3.12.23.2.44.59.44 1.19v1.75c0 .17.12.37.44.31 2.58-.86 4.44-3.3 4.44-6.17 0-3.58-2.92-6.5-6.5-6.5z"/>
+                </svg>
+                项目
+            </a>
+            -->
+        </div>
+
+        <!-- 底部信息 -->
+        <div class="footer">
+            <span>⚡ 由 GitHub Pages 驱动</span>
+            👤 <a href="#">关于</a>
+            🤝 <a href="#">联系</a>
+            📅 <a href="#">2026</a>
+        </div>
+    </div>
+</body>
+</html>
