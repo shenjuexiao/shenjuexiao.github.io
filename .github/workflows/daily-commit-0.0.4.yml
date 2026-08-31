@@ -1,0 +1,101 @@
+# daily-commit-0.0.4.yml
+# github.com/shenjuexiao
+# 20260815
+
+# v0.0.0-20260807
+# chat.deepseek.com/a/chat/s/fa86cd0e-7489-4d70-bab3-fc9674dd979a
+# 设定 GitHub Actions 工作流 daily-commit.yml，每日提交1次，记录提交次数、提交时间到 daily-log.txt
+
+# v0.0.1-20260807
+# chat.deepseek.com/a/chat/s/c816824e-8c2e-4cdd-8bb5-565947ac3cea
+# 设定 GitHub Actions 工作流 daily-commit.yml，每日0点、8点、16点，随机提交0-3次，记录提交次数、提交时间到 daily-log.txt
+
+# v0.0.2-20260807
+# chat.deepseek.com/a/chat/s/ecc39025-eadd-4a30-b16e-df8fca679cb9
+# 设定 GitHub Actions 工作流 daily-commit.yml，每日0点、8点、16点，随机提交0-3次，记录当日提交次数、提交时间到 daily-log.txt
+
+# v0.0.3-20260807
+# chat.deepseek.com/a/chat/s/ab44c809-3ba6-41dc-b84e-14f6accdcd2a
+# 设定 GitHub Actions 工作流 daily-commit.yml
+# 每日0点、8点、16点，随机提交0-3次，记录到 daily-log.txt
+# 格式：提交时间 | 当日提交次数 | 随机数
+
+# v0.0.4-20260807
+# chat.deepseek.com/a/chat/s/908a3126-2eef-4dcf-af9a-5eb9725d79a5
+# 设定 GitHub Actions 工作流 daily-commit.yml
+# 每日0点、8点、16点，随机提交0-3次，记录到 daily-log.txt
+# 格式：提交时间 | 随机数 | 计划次数 | 执行次数
+
+# .github/workflows/daily-commit-0.0.4.yml
+name: daily-commit
+
+on:
+  schedule:
+    # 每天0点、8点、16点触发
+    - cron: '0 0,8,16 * * *'
+  # 支持手动触发
+  workflow_dispatch:
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Git
+        run: |
+          # git config --global user.name "github-actions[bot]"
+          git config --global user.name "shenjuexiao"
+          # git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "shenjuexiao@qq.com"
+          
+      - name: Generate random commits
+        run: |
+          # 生成0-3之间的随机数
+          RANDOM_NUM=$(($RANDOM % 4))
+          
+          # 根据随机数决定提交次数
+          if [ $RANDOM_NUM -eq 0 ]; then
+            COMMIT_COUNT=0
+          elif [ $RANDOM_NUM -eq 1 ]; then
+            COMMIT_COUNT=1
+          elif [ $RANDOM_NUM -eq 2 ]; then
+            COMMIT_COUNT=2
+          else
+            COMMIT_COUNT=3
+          fi
+          
+          # 记录执行信息
+          CURRENT_TIME=$(date '+%Y-%m-%d %H:%M:%S')
+          echo "${CURRENT_TIME} | 随机数: ${RANDOM_NUM} | 计划次数: ${COMMIT_COUNT} | 执行次数: " >> daily-log.txt
+          
+          # 执行提交
+          ACTUAL_COUNT=0
+          for i in $(seq 1 $COMMIT_COUNT); do
+            # 生成随机内容
+            RANDOM_CONTENT="Random commit #${i} at $(date '+%Y-%m-%d %H:%M:%S') - RANDOM: $(($RANDOM % 10000))"
+            
+            # 追加到日志文件
+            echo "${RANDOM_CONTENT}" >> daily-log.txt
+            
+            # 提交更改
+            git add daily-log.txt
+            git commit -m "Daily commit #${i} - $(date '+%Y-%m-%d %H:%M:%S')"
+            
+            ACTUAL_COUNT=$((ACTUAL_COUNT + 1))
+          done
+          
+          # 更新执行次数
+          sed -i "s/| 执行次数: $/| 执行次数: ${ACTUAL_COUNT}/" daily-log.txt
+          
+          # 推送更改
+          git push origin main
+          
+      - name: Display result
+        run: |
+          echo "=== 最新提交记录 ==="
+          tail -n 10 daily-log.txt
